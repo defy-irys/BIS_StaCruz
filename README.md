@@ -154,5 +154,5 @@ Please read CONTRIBUTING.md for details on our code of conduct and the process f
 License
 This project is proprietary and confidential. Unauthorized use or distribution is prohibited.
 
-> Maintained by: Takumi Aquino
+> Maintained by: Lavender Fields IT New Gen Team
 >> Last Updated: 1113 09/02/2026
