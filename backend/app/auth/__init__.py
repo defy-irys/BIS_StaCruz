@@ -1,0 +1,1 @@
+"""Authentication module – compatible with finalized User model."""

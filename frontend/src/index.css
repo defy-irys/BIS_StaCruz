@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eff5fb;
+  --color-brand-100: #dae7f5;
+  --color-brand-200: #b8cfea;
+  --color-brand-300: #8bb0db;
+  --color-brand-400: #5b8cc7;
+  --color-brand-500: #366eb0;
+  --color-brand-600: #245693;
+  --color-brand-700: #1b4478;
+  --color-brand-800: #163862;
+  --color-brand-900: #132f52;
+
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-900 antialiased;
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 9999px;
+  }
+}
+
+/*GIS module (Leaflet) - scoped additions only*/
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+
+.leaflet-tooltip.gis-tooltip {
+  padding: 2px 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 11px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.15);
+}
+
+.leaflet-tooltip.gis-purok-label {
+  padding: 1px 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 0.85);
+  color: #475569;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  box-shadow: none;
+}
+.leaflet-tooltip.gis-purok-label::before {
+  display: none;
+}
+
+.leaflet-control-attribution {
+  font-size: 9px !important;
+  background: rgb(255 255 255 / 0.85) !important;
+  color: #64748b;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  body {
+    background: #fff;
+  }
+}

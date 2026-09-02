@@ -1,0 +1,3 @@
+"""
+BIMS-BIPS application package.
+"""

@@ -1,0 +1,37 @@
+# =============================================================================
+# BIMS-BIPS Backend - Python Dependencies
+# =============================================================================
+# Install with: pip install -r requirements.txt
+# Pinned to major/minor versions known to be compatible with Python 3.13+
+# and async SQLAlchemy 2.x. Patch versions are left open to pick up fixes.
+# =============================================================================
+
+# --- Web framework & server ------------------------------------------------
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.34,<0.35
+
+# --- Settings & data validation ---------------------------------------------
+pydantic>=2.9,<3.0
+pydantic-settings>=2.6,<3.0
+email-validator>=2.2,<3.0
+
+# --- Database (async) --------------------------------------------------------
+sqlalchemy[asyncio]>=2.0,<2.1
+asyncpg>=0.30,<0.31
+alembic>=1.14,<1.15
+
+# --- Authentication & security ------------------------------------------------
+pyjwt[crypto]>=2.9,<3.0
+python-jose[cryptography]>=3.3,<4.0
+passlib[bcrypt]>=1.7,<1.8
+python-multipart>=0.0.12          # required by FastAPI to parse OAuth2 form bodies
+
+# --- Utilities ---------------------------------------------------------------
+python-dotenv>=1.0,<2.0
+
+# --- ASGI runtime dependency needed by SQLAlchemy async engine ---------------
+greenlet>=3.1,<4.0
+
+# --- Bycrypt compatible versiob -------------------------------------------------
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.3

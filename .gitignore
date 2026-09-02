@@ -1,0 +1,48 @@
+# BIMS-BIPS Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+
+
+# Logs
+*.log
+
+
+# IDE / Editors
+.vscode/
+.idea/
+
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Test / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# Temporary files
+*.tmp
+*.temp
