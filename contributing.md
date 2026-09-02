@@ -29,8 +29,14 @@ Example: `feat: add resident search functionality`
 6. Wait for review
 7. Merge after approval
 
-## Pull Request Template
-- What does this PR do?
-- Related issue
-- Screenshots (if UI changes)
-- Testing steps
+## Pull Request Template when creating a PR, include:
+
+- What changed: Brief description
+
+- Why: Reason for change
+
+- Testing: How to test
+
+- Screenshots: For UI changes
+
+- Linked Issues: Reference any related issues
