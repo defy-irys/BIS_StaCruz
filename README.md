@@ -95,31 +95,6 @@ npm run dev
 ```
 Frontend will run at: http://localhost:5173
 
-├── backend/               # FastAPI backend
-│   ├── alembic/          # Database migrations
-│   ├── app/
-│   │   ├── api/          # API endpoints
-│   │   ├── auth/         # Authentication & RBAC
-│   │   ├── models/       # Database models
-│   │   ├── modules/      # Feature modules
-│   │   ├── schemas/      # Pydantic schemas
-│   │   └── services/     # Business logic
-│   └── tests/            # Backend tests
-├── frontend/              # React frontend
-│   ├── src/
-│   │   ├── components/   # Reusable components
-│   │   ├── pages/        # Route pages
-│   │   ├── services/     # API service layer
-│   │   ├── store/        # State management
-│   │   └── types/        # TypeScript types
-│   └── package.json
-├── docs/                  # Project documentation
-│   ├── 00_Project_Bible/ # Standards & guidelines
-│   ├── 01_Project_Charter/
-│   ├── 02_Architecture/
-│   └── ...
-└── .github/              # GitHub templates & workflows
-
 ### Branch Naming Convention
 ```feature/feature-name``` (e.g., ```feature/resident-registration```)
 
